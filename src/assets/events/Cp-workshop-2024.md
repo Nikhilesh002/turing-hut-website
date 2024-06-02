@@ -10,9 +10,8 @@ recording: https://www.youtube.com/playlist?list=PLJUqxQro1e1rSDD32JPJjIQi4dSpeb
 markdownType: event
 ---
 
-
 Greetings Juniors✨!<br/>
-Turing Hut is excited to present its "**Competitive Programming workshop**"  exclusively for **first** years!
+Turing Hut is excited to present its "**Competitive Programming workshop**" exclusively for **first** years!
 
 It's a Two - Day Workshop which will be hosted Online on the 9th & 10th of May, from 10 AM to 1 PM. We'll be introducing multiple competitive coding platforms and important concepts & algorithms to help you kick start your CP Journey.
 
@@ -21,7 +20,6 @@ The Leaderboard will not be taken into consideration.
 This session will be a foundation for Coding fundamentals, so try to engage as much as possible.
 
 **Open to all Branches of VNRVJIET!**
-
 
 Feel free to reach out to us,
 

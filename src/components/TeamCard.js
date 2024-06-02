@@ -17,9 +17,7 @@ export default function TeamCard({
 }) {
   return (
     <Card sx={{ maxWidth: 345 }}>
-      {
-        img && <GatsbyImage alt={name} image={img} />
-      }
+      {img && <GatsbyImage alt={name} image={img} />}
       <CardContent>
         <Typography gutterBottom variant="body1" component="div">
           {name}

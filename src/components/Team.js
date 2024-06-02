@@ -40,24 +40,34 @@ export default function Team() {
 
   const nodes = data.allFile.edges;
 
-  const getImage = (val) => {
+  const getImage = val => {
     const result = nodes.filter(item => {
       const src = item.node.childImageSharp.gatsbyImageData.images.fallback.src;
       var filepath = /[^/]*$/.exec(src)[0];
       return filepath === val.image;
     });
-    return result.length === 1 ? result[0].node.childImageSharp.gatsbyImageData : null;
-  }
+    result.length > 0
+      ? console.log(
+          result[0].node.childImageSharp.gatsbyImageData.images.fallback.src
+        )
+      : console.log("null");
+    return result.length > 0
+      ? result[0].node.childImageSharp.gatsbyImageData
+      : null;
+  };
 
-  const renderMembers = (data) => {
+  const renderMembers = data => {
     return data.map((val, i) => (
       <Grid item xs={10} sm={6} md={3} xl={2} key={i} sx={{ p: 2 }}>
-        <TeamCard name={val.name} img={getImage(val)}
+        <TeamCard
+          name={val.name}
+          img={getImage(val)}
           description={val.designation}
           twitter={val.twitter}
           github={val.github}
           linkedin={val.linkedin}
-          website={val.website} />
+          website={val.website}
+        />
       </Grid>
     ));
   };
